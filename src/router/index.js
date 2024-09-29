@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router"; // Cambia a createWebHashHistory
 import Home from "../views/Home.vue";
 import MealsByName from "../views/MealsByName.vue";
 import MealsByLetter from "../views/MealsByLetter.vue";
@@ -52,7 +52,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Cambia aquí a hash history
   routes,
 });
 
